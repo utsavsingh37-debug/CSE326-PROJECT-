@@ -1,51 +1,45 @@
 # StudySpot — Smart Campus Study Space Finder
 
-A professional, responsive front-end project for CSE326. StudySpot helps students choose a suitable campus study environment based on the type of work they need to do and the facilities they prefer.
-
-## The problem
-
-Students can waste valuable time searching for a suitable place to study. A quiet revision session, a group assignment and a laptop-based task all need different environments. StudySpot organises sample study spaces by purpose and facilities so students can make a more informed choice.
+StudySpot is a responsive front-end concept for CSE326. It helps students compare sample campus study spaces by study style and facilities.
 
 ## Pages
-
-- **Home** (`index.html`) — project introduction, problem statement and how it works.
-- **Explore spaces** (`spaces.html`) — sample campus directory with CSS-only category filters.
-- **Focus guide** (`guide.html`) — task-to-space suggestions and a simple study routine.
-- **About** (`about.html`) — objectives, technologies, scope and future improvements.
-- **Styles** (`styles.css`) — shared responsive design system.
+- **Home** (`index.html`) — introduces the problem and project.
+- **Explore spaces** (`spaces.html`) — searchable directory with category filters.
+- **Focus guide** (`guide.html`) — practical study-space and session suggestions.
+- **About** (`about.html`) — objectives, implementation and project scope.
 
 ## Technologies
-
-- HTML5 for semantic structure and accessible content.
-- CSS3 for layout, responsive design, visual styling, hover states and radio-button filters.
-- No JavaScript, frameworks, database or backend.
+- HTML5 for page structure and accessible content.
+- CSS3 for layout, responsive styling and visual design.
+- Basic vanilla JavaScript in `script.js` for directory search, category filters and result counts.
+- No frameworks, libraries, build tools or backend.
 
 ## Run locally
+1. Download or clone the repository.
+2. Keep all project files in the same folder.
+3. Open `index.html` in a modern browser.
+4. Use the navigation to explore the pages.
 
-1. Download or clone this repository.
-2. Keep all five files in the same folder.
-3. Open `index.html` in a modern web browser.
-4. Use the navigation links to explore the pages.
+No installation is required. The project uses system fonts, so it does not need an external font service.
 
-No build tools or installation are required. An internet connection is only needed if you want the optional Google Fonts to load; the site uses fallback fonts otherwise.
+## Directory behaviour
+On the Explore Spaces page, students can:
+- Search by a space name, facility or description.
+- Filter by quiet zones, group study, charging points or outdoor spaces.
+- Combine a search term with a category filter.
+- See the number of matching spaces and a message when no results match.
 
-## CSS-only filter
+The JavaScript is kept in one small file and uses basic DOM selection, events, loops and conditions.
 
-The Explore Spaces page uses HTML radio inputs and CSS sibling selectors to show cards tagged with the selected category. This is a lightweight demonstration of front-end interaction without JavaScript.
+## Project scope
+All locations and facility details are illustrative sample data, not verified campus listings. This is a front-end demonstration; it does not provide live occupancy, real maps, accounts or saved submissions. Those features would need verified data and a backend.
 
-## Important scope note
-
-This is a front-end prototype. The listed campus spaces and facility descriptions are illustrative sample data and must be replaced with verified information for a real campus deployment. HTML and CSS alone cannot save form submissions, manage user accounts, fetch live occupancy or update listings dynamically.
-
-## Future scope
-
-- Connect a database and admin dashboard for verified space information.
-- Add real-time occupancy and opening-hour updates.
-- Add a campus map and accessible-route information.
-- Allow students to submit corrections and save favourite spaces.
-
-## Academic project
+## Future improvements
+- Add verified campus locations and opening hours.
+- Connect a database and admin dashboard.
+- Add real-time occupancy and accessible-route information.
+- Allow students to submit corrections and save favourites.
 
 **Course:** CSE326  
 **Project:** StudySpot — Smart Campus Study Space Finder  
-**Implementation:** HTML5 + CSS3
+**Stack:** HTML5, CSS3 and basic vanilla JavaScript
