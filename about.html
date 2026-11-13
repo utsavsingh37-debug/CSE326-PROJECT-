@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Learn about the StudySpot CSE326 project concept and its HTML and CSS implementation."><title>About | StudySpot</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the StudySpot CSE326 project and its implementation.">
+  <title>About | StudySpot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="spaces.html">Explore spaces</a><a href="guide.html">Focus guide</a><a class="active" href="about.html">About</a></nav><a class="nav-cta" href="spaces.html">Explore now ↗</a></div></header>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="spaces.html">Explore spaces</a><a href="guide.html">Focus guide</a><a class="active" href="about.html" aria-current="page">About</a>
+    </nav>
+    <a class="nav-cta" href="spaces.html">Explore now</a>
+  </div>
+</header>
 <main>
-<section class="page-hero"><div class="container"><span class="eyebrow">The idea behind the interface</span><h1>Less wandering.<br>More meaningful work.</h1><p>StudySpot is a student-centred concept designed to make choosing a campus study environment easier and more intentional.</p></div></section>
-<section class="section"><div class="container split"><div><span class="eyebrow">The problem</span><h2>Finding a seat shouldn't take the whole break.</h2><p>On a busy campus, students may not know which spaces are quiet, which support group work or where basic facilities are available. This uncertainty can waste time and interrupt a planned study session.</p></div><div class="soft-panel"><h3>Our proposed approach</h3><ul class="check-list"><li>Organise spaces by study purpose</li><li>Show useful facilities at a glance</li><li>Let students filter by their priorities</li><li>Encourage thoughtful use of shared spaces</li></ul></div></div></section>
-<section class="section" style="padding-top:0"><div class="container"><div class="section-head"><div><span class="eyebrow">Project objectives</span><h2>What this project demonstrates.</h2></div></div><div class="feature-grid">
-<article class="feature"><div class="feature-icon">🧱</div><h3>HTML structure</h3><p>Semantic page sections, navigation, headings, cards, lists, forms and accessible labels.</p></article>
-<article class="feature"><div class="feature-icon">🎨</div><h3>CSS design</h3><p>Reusable styling, responsive layouts, spacing, typography, hover states and visual hierarchy.</p></article>
-<article class="feature"><div class="feature-icon">⚙️</div><h3>CSS interaction</h3><p>Radio-button filters demonstrate a simple no-JavaScript way to change the visible space cards.</p></article>
-</div></div></section>
-<section class="section" id="limitations" style="padding-top:0"><div class="container soft-panel"><span class="eyebrow">Honest project scope</span><h2>What works — and what needs a backend.</h2><div class="guide-grid" style="margin-top:24px">
-<div><h3>Included in this version</h3><ul class="check-list"><li>Four connected responsive pages</li><li>CSS-only category filters</li><li>Sample space directory and details</li><li>Study tips and project explanation</li></ul></div>
-<div><h3>Future development</h3><ul class="check-list"><li>Live occupancy and opening hours</li><li>Student-submitted space updates</li><li>Saved favourites and accounts</li><li>Real campus map and location data</li></ul></div>
-</div><p class="notice">All locations and facility descriptions in this demonstration are sample content, not verified campus listings. HTML and CSS alone cannot store submissions, authenticate users or fetch live availability.</p></div></section>
+  <section class="page-hero"><div class="container"><span class="eyebrow">The idea behind the interface</span><h1>Less wandering.<br>More meaningful work.</h1><p>StudySpot is a student-centred concept designed to make choosing a campus study environment easier and more intentional.</p></div></section>
+  <section class="section"><div class="container split">
+    <div><span class="eyebrow">The problem</span><h2>Finding a seat shouldn't take the whole break.</h2><p>Students may not know which spaces are quiet, which support group work or where basic facilities are available. This uncertainty can waste time and interrupt a planned study session.</p></div>
+    <div class="soft-panel"><h3>Our proposed approach</h3><ul class="check-list"><li>Organise spaces by study purpose</li><li>Show useful facilities at a glance</li><li>Filter spaces by student priorities</li><li>Encourage thoughtful use of shared spaces</li></ul></div>
+  </div></section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><span class="eyebrow">Project objectives</span><h2>What this project demonstrates.</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">🧱</div><h3>HTML structure</h3><p>Semantic page sections, navigation, headings, cards, lists and accessible labels.</p></article>
+        <article class="feature"><div class="feature-icon">🎨</div><h3>CSS design</h3><p>Reusable styling, responsive layouts, spacing, typography and visual hierarchy.</p></article>
+        <article class="feature"><div class="feature-icon">⚙️</div><h3>Basic JavaScript</h3><p>Simple search, category filters and result counts using DOM selection and events.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="limitations">
+    <div class="container soft-panel">
+      <span class="eyebrow">Honest project scope</span><h2>What works — and what needs a backend.</h2>
+      <div class="guide-grid">
+        <div><h3>Included in this version</h3><ul class="check-list"><li>Four connected responsive pages</li><li>Searchable sample space directory</li><li>Category filters and result count</li><li>Focus guide and project explanation</li></ul></div>
+        <div><h3>Future development</h3><ul class="check-list"><li>Live occupancy and opening hours</li><li>Student-submitted space updates</li><li>Saved favourites and accounts</li><li>Real campus map and location data</li></ul></div>
+      </div>
+      <p class="notice">All locations and facility descriptions are illustrative sample content, not verified campus listings. A backend would be needed to store submissions, authenticate users or fetch live availability.</p>
+    </div>
+  </section>
 </main>
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html" style="color:white"><span class="brand-mark" style="background:#c8f169;color:#17251f">S</span> study<span style="color:#c8f169">spot.</span></a><p>A student-first campus study space finder concept.</p></div><div><h3>Explore</h3><div class="footer-links"><a href="spaces.html">Study spaces</a><a href="guide.html">Focus guide</a></div></div><div><h3>Project</h3><div class="footer-links"><a href="about.html">About StudySpot</a><a href="#limitations">Project scope</a></div></div></div><div class="footer-bottom"><span>© 2026 StudySpot · CSE326 HTML & CSS project</span><span>Built with HTML and CSS.</span></div></div></footer>
-</body></html>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a><p>A student-first campus study space finder concept.</p></div>
+      <div><h2>Explore</h2><div class="footer-links"><a href="spaces.html">Study spaces</a><a href="guide.html">Focus guide</a></div></div>
+      <div><h2>Project</h2><div class="footer-links"><a href="about.html">About StudySpot</a><a href="#limitations">Project scope</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 StudySpot · CSE326 project</span><span>HTML, CSS and JavaScript.</span></div>
+  </div>
+</footer>
+</body>
+</html>
