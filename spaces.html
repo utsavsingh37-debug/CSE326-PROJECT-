@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore sample campus study spaces by the facilities you need.">
+  <title>Explore spaces | StudySpot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="spaces.html" aria-current="page">Explore spaces</a>
+      <a href="guide.html">Focus guide</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="nav-cta" href="guide.html">Study smarter</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">The campus directory</span>
+      <h1>Find a space that<br>fits your session.</h1>
+      <p>Search the sample directory or choose a category to find a space that suits your work.</p>
+    </div>
+  </section>
+
+  <section class="section directory-section">
+    <div class="container">
+      <div class="filter-panel">
+        <label class="filter-title" for="space-search">Search study spaces</label>
+        <input class="search-input" type="search" id="space-search" placeholder="Try quiet, coding, outdoor..." autocomplete="off">
+        <p class="filter-title">Filter by what matters today</p>
+        <div class="filters" role="group" aria-label="Filter study spaces">
+          <input type="radio" name="space-filter" id="all" value="all" checked>
+          <label for="all">All spaces</label>
+          <input type="radio" name="space-filter" id="quiet" value="quiet">
+          <label for="quiet">Quiet zones</label>
+          <input type="radio" name="space-filter" id="group" value="group">
+          <label for="group">Group study</label>
+          <input type="radio" name="space-filter" id="power" value="power">
+          <label for="power">Charging points</label>
+          <input type="radio" name="space-filter" id="outdoor" value="outdoor">
+          <label for="outdoor">Outdoor</label>
+        </div>
+        <p class="notice">These locations and facility details are illustrative sample data, not verified campus listings.</p>
+      </div>
+
+      <p class="results-count" id="results-count" aria-live="polite">Showing all 6 sample spaces</p>
+      <div class="space-grid" id="space-list">
+        <article class="space-card quiet power">
+          <div class="space-visual" aria-hidden="true">📖</div>
+          <div class="space-info">
+            <span class="availability">Calm environment</span>
+            <h2>Central Reading Room</h2>
+            <p>Best for long reading sessions, revision and individual assignments.</p>
+            <div class="space-meta"><span class="chip">Very quiet</span><span class="chip">Power sockets</span><span class="chip">Solo seating</span></div>
+            <p><strong>Best for:</strong> Deep focus</p>
+          </div>
+        </article>
+
+        <article class="space-card group power">
+          <div class="space-visual" aria-hidden="true">👥</div>
+          <div class="space-info">
+            <span class="availability">Collaboration friendly</span>
+            <h2>Innovation Lounge</h2>
+            <p>Open tables for brainstorming, presentations and team discussions.</p>
+            <div class="space-meta"><span class="chip">Moderate noise</span><span class="chip">Power sockets</span><span class="chip">Group tables</span></div>
+            <p><strong>Best for:</strong> Team projects</p>
+          </div>
+        </article>
+
+        <article class="space-card outdoor">
+          <div class="space-visual" aria-hidden="true">🌳</div>
+          <div class="space-info">
+            <span class="availability">Fresh-air option</span>
+            <h2>Garden Study Deck</h2>
+            <p>An open-air setting for light reading, planning and short breaks.</p>
+            <div class="space-meta"><span class="chip">Natural ambience</span><span class="chip">Outdoor</span><span class="chip">Open seating</span></div>
+            <p><strong>Best for:</strong> Reading breaks</p>
+          </div>
+        </article>
+
+        <article class="space-card quiet">
+          <div class="space-visual" aria-hidden="true">🪑</div>
+          <div class="space-info">
+            <span class="availability">Low-distraction zone</span>
+            <h2>Silent Study Pods</h2>
+            <p>Individual desks designed for focused work with minimal conversation.</p>
+            <div class="space-meta"><span class="chip">Very quiet</span><span class="chip">Individual desks</span><span class="chip">Indoor</span></div>
+            <p><strong>Best for:</strong> Exam preparation</p>
+          </div>
+        </article>
+
+        <article class="space-card group">
+          <div class="space-visual" aria-hidden="true">🧩</div>
+          <div class="space-info">
+            <span class="availability">Discussion friendly</span>
+            <h2>Project Collaboration Bay</h2>
+            <p>A flexible shared area for peer learning, diagrams and group planning.</p>
+            <div class="space-meta"><span class="chip">Conversation okay</span><span class="chip">Whiteboard</span><span class="chip">Group tables</span></div>
+            <p><strong>Best for:</strong> Problem solving</p>
+          </div>
+        </article>
+
+        <article class="space-card quiet power">
+          <div class="space-visual" aria-hidden="true">💻</div>
+          <div class="space-info">
+            <span class="availability">Tech-ready setup</span>
+            <h2>Digital Learning Hub</h2>
+            <p>Desk-based workspace suited to coding, online research and laptop tasks.</p>
+            <div class="space-meta"><span class="chip">Low noise</span><span class="chip">Power sockets</span><span class="chip">Desk seating</span></div>
+            <p><strong>Best for:</strong> Coding and research</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-note" id="no-results" hidden>No spaces match your search. Try another word or select “All spaces”.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container soft-panel split">
+      <div>
+        <span class="eyebrow">Before you leave</span>
+        <h2>Make the trip worth it.</h2>
+        <p>Confirm actual availability and opening hours with your campus before travelling.</p>
+      </div>
+      <ul class="check-list">
+        <li>Carry your student ID</li>
+        <li>Check current opening hours</li>
+        <li>Bring what you need for the session</li>
+        <li>Respect quiet and shared zones</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a><p>A student-first campus study space finder concept.</p></div>
+      <div><h2>Explore</h2><div class="footer-links"><a href="spaces.html">Study spaces</a><a href="guide.html">Focus guide</a></div></div>
+      <div><h2>Project</h2><div class="footer-links"><a href="about.html">About StudySpot</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 StudySpot · CSE326 project</span><span>Sample campus information only.</span></div>
+  </div>
+</footer>
+</body>
+</html>
