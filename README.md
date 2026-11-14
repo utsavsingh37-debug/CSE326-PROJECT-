@@ -8,6 +8,9 @@ StudySpot is a responsive front-end concept for CSE326. It helps students compar
 - **Focus guide** (`guide.html`) — practical study-space and session suggestions.
 - **About** (`about.html`) — objectives, implementation and project scope.
 
+## Design
+The interface uses a classic navy, warm cream, sage and muted-gold palette. Shared colours and common layout rules are kept in `styles.css` to make the design easier to maintain.
+
 ## Technologies
 - HTML5 for page structure and accessible content.
 - CSS3 for layout, responsive styling and visual design.
@@ -29,7 +32,7 @@ On the Explore Spaces page, students can:
 - Combine a search term with a category filter.
 - See the number of matching spaces and a message when no results match.
 
-The JavaScript is kept in one small file and uses basic DOM selection, events, loops and conditions.
+The JavaScript is kept in one small file and uses basic DOM selection, events, loops and conditions. It checks that the search field exists before running, so the script can be included safely on other pages later.
 
 ## Project scope
 All locations and facility details are illustrative sample data, not verified campus listings. This is a front-end demonstration; it does not provide live occupancy, real maps, accounts or saved submissions. Those features would need verified data and a backend.
