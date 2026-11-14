@@ -193,3 +193,17 @@ a:focus-visible, input:focus-visible, button:focus-visible, .filters input:focus
   .footer-bottom { display: block; }
   .footer-bottom span { display: block; margin-top: 5px; }
 }
+
+/* Small page-specific helpers */
+.highlight-text { color: var(--sage); }
+.campus-title { margin-top: 10px; }
+.campus-description { margin: 0; font-size: 0.82rem; }
+.section-top-small { padding-top: 0; }
+.steps-grid-two { grid-template-columns: 1fr 1fr; }
+.step-wide { grid-column: 1 / -1; }
+.guide-action { margin-top: 28px; }
+
+@media (max-width: 480px) {
+  .steps-grid-two { grid-template-columns: 1fr; }
+  .step-wide { grid-column: auto; }
+}
