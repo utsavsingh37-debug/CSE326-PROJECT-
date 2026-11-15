@@ -6,6 +6,8 @@ if (searchInput) {
   const cards = document.querySelectorAll(".space-card");
   const count = document.getElementById("results-count");
   const emptyMessage = document.getElementById("no-results");
+  const clearButton = document.getElementById("clear-filters");
+  const allFilter = document.getElementById("all");
 
   function filterSpaces() {
     const searchText = searchInput.value.trim().toLowerCase();
@@ -22,14 +24,22 @@ if (searchInput) {
       if (showCard) visible++;
     });
 
-    count.textContent = "Showing " + visible + " of " + cards.length + " sample spaces";
-    emptyMessage.hidden = visible > 0;
+    count.textContent = "Showing " + visible + " of " + cards.length + " spaces";
+    emptyMessage.hidden = visible !== 0;
+  }
+
+  function clearFilters() {
+    searchInput.value = "";
+    allFilter.checked = true;
+    filterSpaces();
+    searchInput.focus();
   }
 
   searchInput.addEventListener("input", filterSpaces);
   filters.forEach(function (filter) {
     filter.addEventListener("change", filterSpaces);
   });
+  clearButton.addEventListener("click", clearFilters);
 
   filterSpaces();
 }
