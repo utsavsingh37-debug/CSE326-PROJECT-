@@ -9,6 +9,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html"><span class="brand-mark">S</span> study<span>spot.</span></a>
@@ -22,7 +23,7 @@
   </div>
 </header>
 
-<main>
+<main id="main-content">
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow">The campus directory</span>
@@ -35,7 +36,11 @@
     <div class="container">
       <div class="filter-panel">
         <label class="filter-title" for="space-search">Search study spaces</label>
-        <input class="search-input" type="search" id="space-search" placeholder="Try quiet, coding, outdoor..." autocomplete="off">
+        <div class="search-row">
+          <input class="search-input" type="search" id="space-search" placeholder="Try quiet, coding, outdoor..." autocomplete="off" aria-describedby="search-help">
+          <button class="clear-button" id="clear-filters" type="button">Clear filters</button>
+        </div>
+        <p class="search-help" id="search-help">Search by space name, facility or study activity. You can combine a search with a category below.</p>
         <p class="filter-title">Filter by what matters today</p>
         <div class="filters" role="group" aria-label="Filter study spaces">
           <input type="radio" name="space-filter" id="all" value="all" checked>
