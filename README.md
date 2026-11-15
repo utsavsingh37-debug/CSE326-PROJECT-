@@ -30,6 +30,8 @@ On the Explore Spaces page, students can:
 - Search by a space name, facility or description.
 - Filter by quiet zones, group study, charging points or outdoor spaces.
 - Combine a search term with a category filter.
+- Reset the search and selected category with one button.
+- Use the skip link to move directly to the main content.
 - See the number of matching spaces and a message when no results match.
 
 The JavaScript is kept in one small file and uses basic DOM selection, events, loops and conditions. It checks that the search field exists before running, so the script can be included safely on other pages later.
