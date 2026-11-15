@@ -207,3 +207,36 @@ a:focus-visible, input:focus-visible, button:focus-visible, .filters input:focus
   .steps-grid-two { grid-template-columns: 1fr; }
   .step-wide { grid-column: auto; }
 }
+/* Helpful navigation and search controls */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  z-index: 20;
+  padding: 10px 14px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 5px;
+}
+.skip-link:focus { top: 12px; }
+.search-row { display: flex; gap: 10px; align-items: stretch; }
+.search-row .search-input { flex: 1; min-width: 0; margin: 0; }
+.clear-button {
+  padding: 10px 15px;
+  border: 1px solid var(--sage);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--sage);
+  font-weight: 700;
+  cursor: pointer;
+}
+.clear-button:hover { background: var(--sage-light); }
+.search-help { margin: 8px 0 18px; font-size: 0.82rem; }
+.filters label:hover { border-color: var(--sage); }
+.space-card:focus-within { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+@media (max-width: 480px) {
+  .search-row { flex-direction: column; }
+  .clear-button { width: 100%; }
+  .nav-links { flex-wrap: wrap; justify-content: flex-start; column-gap: 14px; row-gap: 6px; }
+}
